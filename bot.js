@@ -46,7 +46,7 @@ bot.on("message", async message => {
     return;
   }
 
-  if(cmd === `${prefix}ban`){
+  if(command === `${prefix}ban`){
 
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("Can't find user!");
