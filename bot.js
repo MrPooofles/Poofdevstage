@@ -119,7 +119,7 @@ if (message.content === '!botinfo') {
       let botinfoembed = new Discord.RichEmbed()
       .setTitle('PoofBot Information')
       .setDescription('This bot runs on discord.js')
-      .addField('This server is running on', 'Heroku')
+      .addField('This bot is hosted using', 'Heroku')
       .addField('Bot development started on', '2 May 2018')
       return message.channel.send(botinfoembed);
      }
