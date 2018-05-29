@@ -133,5 +133,6 @@ client.on("message", async message => {
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
 });
-           
-bot.login("NDQzNjcwODg2MzgyNTY3NDI0.DeKEvw.ttt4QFbctOmUpPvIZh6I4CGoWoE");
+          
+
+client.login(config.token);
