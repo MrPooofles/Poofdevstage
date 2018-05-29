@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 client.on("ready", () => {
-    client.user.setActivity({game: {name: "Cesium Bot Development", type: WATCHING}});
+    client.user.setActivity({game: {name: "Cesium Bot Development", type: 0}});
 });
 
 client.on("guildCreate", guild => {
