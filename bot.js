@@ -115,13 +115,12 @@ bot.on("message", async message => {
     return message.channel.send(serverembed);
   }
 
-if (message.content === '$botinfo') {
+if (message.content === '!botinfo') {
       let botinfoembed = new Discord.RichEmbed()
-      .setTitle('ImpladeBot - Info')
-      .setDescription('All of these version and status is on our information!')
-      .addField('Version', 'IR-3.1')
+      .setTitle('PoofBot Information')
+      .setDescription('This bot runs on discord.js')
       .addField('This server is running on', 'Heroku')
-      .addField('Bot was created on', '6 May 2018')
+      .addField('Bot development started on', '2 May 2018')
       return message.channel.send(botinfoembed);
      }
 });
