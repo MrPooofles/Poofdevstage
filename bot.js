@@ -74,7 +74,7 @@ bot.on("message", async message => {
   }
 
 
-  if(cmd === `${prefix}report`){
+  if(command === `${prefix}report`){
 
 
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
@@ -100,7 +100,7 @@ bot.on("message", async message => {
     return;
   }
 
-  if(cmd === `${prefix}serverinfo`){
+  if(command === `${prefix}serverinfo`){
 
     let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
@@ -115,14 +115,6 @@ bot.on("message", async message => {
     return message.channel.send(serverembed);
   }
 
-if (message.content === '!botinfo') {
-      let botinfoembed = new Discord.RichEmbed()
-      .setTitle('PoofBot Information')
-      .setDescription('This bot runs on discord.js')
-      .addField('This bot is hosted using', 'Heroku')
-      .addField('Bot development started on', '2 May 2018')
-      return message.channel.send(botinfoembed);
-     }
 });
 
 bot.login("NDQzNjcwODg2MzgyNTY3NDI0.DeKEvw.ttt4QFbctOmUpPvIZh6I4CGoWoE");
