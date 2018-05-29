@@ -100,9 +100,6 @@ bot.on("message", async message => {
     return;
   }
 
-
-
-
   if(cmd === `${prefix}serverinfo`){
 
     let sicon = message.guild.iconURL;
@@ -118,22 +115,15 @@ bot.on("message", async message => {
     return message.channel.send(serverembed);
   }
 
-
-
-  if(cmd === `${prefix}botinfo`){
-
-    let bicon = bot.user.displayAvatarURL;
-    let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#15f153")
-    .setThumbnail(bicon)
-    .addField("Bot Name", bot.user.username)
-    .addField("Created On", bot.user.createdAt)
-    .addField("Owner of bot", bot.owner);
-
-    return message.channel.send(botembed);
-  }
-
+if (message.content === '$botinfo') {
+      let botinfoembed = new Discord.RichEmbed()
+      .setTitle('ImpladeBot - Info')
+      .setDescription('All of these version and status is on our information!')
+      .addField('Version', 'IR-3.1')
+      .addField('This server is running on', 'Heroku')
+      .addField('Bot was created on', '6 May 2018')
+      return message.channel.send(botinfoembed);
+     }
 });
 
 bot.login("NDQzNjcwODg2MzgyNTY3NDI0.DeKEvw.ttt4QFbctOmUpPvIZh6I4CGoWoE");
