@@ -10,21 +10,6 @@ function getRandomColor() {
   }
   return color;
 }
-
-
-client.on('message', message => {
-    if (message.content.startsWith(prefix + 'botinfo')) {
-
-      const embed = new Discord.RichEmbed()
-           .setTitle("Bot Information")
-           .setColor("#15f153")
-           .setThumbnail(bicon)
-           .addField("Bot name", bot.user.username)
-           .addField("Bot created on", bot.user.createdAt)
-           .addField("Owner of the bot is", bot.owner);
-
-      message.channel.send({embed});
-    }
 });
 client.on('message', message => {
     if (message.content.split(' ')[0] == prefix + "kick") {
@@ -84,8 +69,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === prefix + 'autopurge') {
-    	message.reply('I agree!');
-      message.delete(10);
+    	message.delete(10);
   	}
 });
 client.on('message', message => {
