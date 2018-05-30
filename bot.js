@@ -37,8 +37,8 @@ client.on('message', async message => {
   const command = args.shift().toLowerCase()
 
   // Let's go with a few common example commands! Feel free to delete or change those.
-
-  if (command === 'ping') {
+  
+  if (command === ${prefix}'ping') {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send('Ping?')
