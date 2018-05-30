@@ -52,7 +52,7 @@ client.on('message', message => {
 
       const embed = new Discord.RichEmbed()
            .setTitle("Help")
-           .setColor(getRandomColor())
+           .setColor("#0e5293")
            .setDescription("**You want help? You get help.**\n **Here are all my commands!** **Do c! before every command!!!**\n ```Ban``` **Bans a person!** ```Kick``` **Kicks a Person!**\n```Say``` **Say something that Cesium will also say!**\n ```Agree``` **You will regret it.**\n ```Pizza``` **Gives you a pizza**\n ```Baby Chicken``` **Picture of a baby chicken.**\n ```Chicken``` **Gives you a picture of a chicken.**\n ```Parrot``` **Picture of a parrot.**\n ```Elephant``` **Picture of a elephant.**```Horse``` **Picture Of a horse**```Kick (user)```**Kicks a user.```Ban (user) ``` **Bans a user**")
            .setFooter("CesiumBot :robot: ")
       message.channel.send({embed});
