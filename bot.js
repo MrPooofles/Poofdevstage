@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'p>'; 
+const prefix = 'c?'; 
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
